@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>坐席工作平台 | 直租房源</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.6 -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.min.css" />
+		<!-- Ionicons -->
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">-->
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/ionicons.min.css" />
+		<!-- Theme style -->
+		<link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+		<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.
+  -->
+		<link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+		<!-- bootstrap wysihtml5 - text editor -->
+		<link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+		<!-- daterange picker -->
+		<link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+		<!-- bootstrap datepicker -->
+		<link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+		<!-- DataTables -->
+		<link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+		<!--公用css-->
+		<link rel="stylesheet" type="text/css" href="dist/css/public.css" />
+		<link rel="stylesheet" href="dist/css/common.css" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+	</head>
+	<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+
+			<!-- Main Header -->
+			<header class="main-header">
+
+				<!-- Logo -->
+				<a href="index2.html" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini">平台</span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg">坐席工作平台</span>
+				</a>
+
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					<a href="#" class="b-sidebar-toggle" title="首页"><img src="dist/img/backstage/pic5.png" width="17px"/></a>
+					<a href="#" class="b-sidebar-toggle" title="控制台"><img src="dist/img/backstage/pic6.png" width="17px"/></a>
+					<a href="#" class="b-sidebar-toggle" title="退出登录"><img src="dist/img/backstage/pic3.png" width="17px"/></a>
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- Messages: style can be found in dropdown.less-->
+							<li class="dropdown b-top-bar">
+								<a href="#" title="验证码"><img src="dist/img/backstage/pic8.png"/></a>
+							</li>
+							<li class="dropdown b-top-bar">
+								<a href="#" title="楼盘地图"><img src="dist/img/backstage/pic7.png"/></a>
+							</li>
+							<li class="dropdown b-top-bar">
+								<a href="#" title="OM"><img src="dist/img/backstage/pic2.png"/></a>
+							</li>
+							<li class="dropdown b-top-bar">
+								<a href="#" title="短信"><img src="dist/img/backstage/pic1.png"/></a>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+
+					<!-- Sidebar user panel (optional) -->
+					<div class="user-panel">
+						<div class="pull-left image">
+							<img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+						</div>
+						<div class="pull-left info">
+							<p>admin</p>
+							<!-- Status -->
+							<a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+						</div>
+					</div>
+					<!-- Sidebar Menu -->
+					<ul class="sidebar-menu">
+						<li class="header">HEADER</li>
+						<!-- Optionally, you can add icons to the links -->
+						<li>
+							<a href="index.html"><i class="fa fa-dashboard"></i> <span>平台导航</span></a>
+						</li>
+						<li class="treeview active">
+							<a href="#"><i class="fa fa-building"></i> <span>楼盘房源</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="estate.html"><i class="fa fa-circle-o"></i>楼盘总览</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>房源列表</a>
+								</li>
+								<li>
+									<a href="xinlouzengbu.html"><i class="fa fa-circle-o"></i>新楼增补</a>
+								</li>
+								<li class="active">
+									<a href="zhizufangyuan.html"><i class="fa fa-circle-o"></i>直租房源</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="pages/merchandise-control/merchandise-control.html"><i class="fa  fa-user"></i><span>客户管理</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="customer-list.html"><i class="fa fa-circle-o"></i>客户列表</a>
+								</li>
+								<li>
+									<a href="contract.html"><i class="fa fa-circle-o"></i>交易合同</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#"><i class="fa fa-user-plus"></i> <span>助理职员</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>助理</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>职员</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>ACL</a>
+								</li>
+							</ul>
+						</li>
+						<!--<li class="treeview">
+							<a href="#"><i class="fa fa-users"></i> <span>人员机构</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>职员</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>ACL</a>
+								</li>
+							</ul>
+						</li>-->
+						<li class="treeview">
+							<a href="#"><i class="fa fa-gears"></i> <span>后台管理</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>管理选项</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>新闻</a>
+								</li>
+								<!--<li>
+									<a href="#"><i class="fa fa-circle-o"></i>网关明细</a>
+								</li>-->
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>调试工具</a>
+								</li>
+							</ul>
+						</li>
+						<li class="treeview">
+							<a href="#"><i class="fa fa-line-chart"></i> <span>市场推广</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>合作团队</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>耗材订单</a>
+								</li>
+							</ul>
+						</li>
+						<!--<li class="treeview">
+							<a href="#"><i class="fa fa-book"></i> <span>日志系统</span>
+								<span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+							</a>
+							<ul class="treeview-menu">
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>系统日志</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-circle-o"></i>短信日志</a>
+								</li>
+							</ul>
+						</li>-->
+					</ul>
+					<!-- /.sidebar-menu -->
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="box">
+								<!-- /.box-header -->
+								<div class="box-body">
+									<!--自定义功能条-->
+            					<div class="row margin">
+            						<!--<button type="button" class="btn  btn-primary ">资料楼盘</button>-->
+            						<div style="margin: 10px 0 0 10px;float: left;">直租房源--></div>
+									<div class="b-search-bar" >
+										<label>
+											<select class="form-control input-sm">
+												<option value="">楼盘</option>
+												<!--<option value="">城市</option>-->
+												<!--<option value="">区域</option>
+												<option value="">片区</option>
+												<option value="">状态</option>
+												<option value="">楼盘图</option>
+												<option value="">在租</option>
+												<option value="">在售</option>
+												<option value="">租单成交</option>
+												<option value="">售单成交</option>
+												<option value="">助理</option>
+												<option value="">坐标点</option>-->
+											</select>
+											<input type="search" class="form-control input-sm" placeholder="关键字">
+            								<button type="button" class="btn  btn-primary ">搜索</button>
+										</label>
+									</div>
+								</div>
+							<!-- /自定义功能条-->
+				              <table id="example1" class="table table-bordered table-striped">
+				                <thead>
+				                <tr>
+				                  <th>提交时间</th>
+				                  <th>助理</th>
+				                  <th>城市</th>
+				                  <th>区县</th>
+				                  <th>定位</th>
+				                  <th>楼盘</th>
+				                  <th>描述信息</th>
+				                  <th>业主手机</th>
+				                </tr>
+				                </thead>
+				                <tbody>
+				                <tr>
+				                  <td>2017-02-06 21:31:44</td>
+				                  <td>600100</td>
+				                  <td>深圳</td>
+				                  <td>福田区</td>
+				                  <td>爱国路1011号</td>
+				                  <td>长城世纪花园</td>
+				                  <td>急租，86平米，张女士</td>
+				                  <td>13900009900</td>
+				                </tr>
+				                <tr>
+				                  <td>2017-02-06 21:31:44</td>
+				                  <td>600100</td>
+				                  <td>广东</td>
+				                  <td>珠海区</td>
+				                  <td>南城街道</td>
+				                  <td>省水电局家属楼</td>
+				                  <td></td>
+				                  <td></td>
+				                </tr>
+				                </tbody>
+				              </table>
+
+								</div>
+								<!-- /.box-body -->
+							</div>
+							<!-- /.box -->
+						</div>
+						<!-- /.col -->
+					</div>
+					<!-- /.row -->
+					<!-- Your Page Content Here -->
+
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+			<!-- Control Sidebar -->
+			<aside class="control-sidebar control-sidebar-dark">
+				<!-- Create the tabs -->
+				<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+					<li class="active">
+						<a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a>
+					</li>
+					<li>
+						<a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a>
+					</li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<!-- Home tab content -->
+					<div class="tab-pane active" id="control-sidebar-home-tab">
+						<h3 class="control-sidebar-heading">Recent Activity</h3>
+						<ul class="control-sidebar-menu">
+							<li>
+								<a href="javascript::;">
+									<i class="menu-icon fa fa-birthday-cake bg-red"></i>
+
+									<div class="menu-info">
+										<h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+
+										<p>Will be 23 on April 24th</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- /.control-sidebar-menu -->
+
+						<h3 class="control-sidebar-heading">Tasks Progress</h3>
+						<ul class="control-sidebar-menu">
+							<li>
+								<a href="javascript::;">
+									<h4 class="control-sidebar-subheading">
+                Custom Template Design
+                <span class="pull-right-container">
+                  <span class="label label-danger pull-right">70%</span>
+                </span>
+              </h4>
+
+									<div class="progress progress-xxs">
+										<div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<!-- /.control-sidebar-menu -->
+
+					</div>
+					<!-- /.tab-pane -->
+					<!-- Stats tab content -->
+					<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+					<!-- /.tab-pane -->
+					<!-- Settings tab content -->
+					<div class="tab-pane" id="control-sidebar-settings-tab">
+						<form method="post">
+							<h3 class="control-sidebar-heading">General Settings</h3>
+
+							<div class="form-group">
+								<label class="control-sidebar-subheading">
+              Report panel usage
+              <input type="checkbox" class="pull-right" checked>
+            </label>
+
+								<p>
+									Some information about this general settings option
+								</p>
+							</div>
+							<!-- /.form-group -->
+						</form>
+					</div>
+					<!-- /.tab-pane -->
+				</div>
+			</aside>
+			<!-- /.control-sidebar -->
+			<!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+			<div class="control-sidebar-bg"></div>
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+
+		<!-- jQuery 2.2.3 -->
+		<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+		<!-- Bootstrap 3.3.6 -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="dist/js/app.min.js"></script>
+
+		<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+		<!-- date-range-picker -->
+		<script src="plugins/moment.min.js"></script>
+		<script src="plugins/daterangepicker/daterangepicker.js"></script>
+		<!-- bootstrap tree -->
+		<!-- bootstrap datepicker -->
+		<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+		<!-- bootstrap tree -->
+		<script src="plugins/bootstrap-tree/bootstrap-treeview.min.js"></script>
+		<script src="dist/js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//bootstrap-tree
+				$('#treeview1').treeview({
+					showCheckbox: false,
+					showBorder: false,
+					highlightSelected: true,
+					data: defaultData
+				});
+			});
+		</script>
+		<script>
+			$(function() {
+				//Date range picker
+				$('#reservation').daterangepicker({
+					locale: {
+						format: 'YYYY-MM-DD',
+						applyLabel: '确认',
+						cancelLabel: '取消',
+						daysOfWeek: ["日", "一", "二", "三", "四", "五", "六"],
+						monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+					}
+				});
+			});
+		</script>
+		<!-- DataTables -->
+		<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+		<script src="dist/js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+				$('#example1').DataTable({
+					"paging": true,
+					"lengthChange": false,
+					"searching": false,
+					"ordering": true,
+					"info": true,
+					"autoWidth": false,
+					"oLanguage": {
+						"sLengthMenu": "每页显示 _MENU_ 条记录",
+						"sZeroRecords": "对不起，查询不到任何相关数据",
+						"sInfo": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录",
+						"sInfoEmpty": "",
+						"sInfoFiltered": "数据表中共为 _MAX_ 条记录",
+						"sProcessing": "正在加载中...",
+						"sSearch": "搜索",
+						"sUrl": "", //多语言配置文件，可将oLanguage的设置放在一个txt文件中，例：Javascript/datatable/dtCH.txt
+						"oPaginate": {
+							"sFirst": "第一页",
+							"sPrevious": " 上一页 ",
+							"sNext": " 下一页 ",
+							"sLast": " 最后一页 "
+						}
+					} //多语言配置
+				});
+		</script>
+	</body>
+
+</html>

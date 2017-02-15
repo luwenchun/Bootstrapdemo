@@ -1,0 +1,26 @@
+/*reset*/
+a{color: #000099;}
+a:hover{color: #000099;}
+/*调整间距*/
+.box-body{padding-top: 5px;}
+.box-body label{margin-bottom: 0;}
+.dataTables_wrapper{position: relative;}
+.dataTables_wrapper .row:first-child{position: absolute;top: -30px;}
+/*首页卡片组件*/
+.b-card-w{position: relative;margin-top: 20px;}
+.b-card-title{display: inline-block;position: absolute;top: -11px;left: 40px;background: #FFFFFF;padding: 0 18px;font-weight: bold;color: #5e5e5e;font-size: 16px;}
+/*.b-card-content{border:solid 1px #cccccc ;padding-top:25px ;border-radius:8px ;}*/
+.b-card-content{border:solid 1px #cccccc ;padding-top:25px ;border-radius:8px ;line-height: 30px;height: 252px;}
+.b-card-w.yzm .table{margin-bottom: 0;}
+.b-card-w .table>tbody>tr>th,.b-card-w .table>tbody>tr>td{border-right: solid 1px #f4f4f4;}
+/*鼠标右键菜单*/
+.smart_menu_box{display:none; width:140px; position:absolute; z-index:201105;}
+.smart_menu_body{padding:1px; border:1px solid #B8CBCB; background-color:#fff; -moz-box-shadow:2px 2px 5px #666; -webkit-box-shadow:2px 2px 5px #666; box-shadow:2px 2px 5px #666;}
+.smart_menu_ul{margin:0; padding:0; list-style-type:none;}
+.smart_menu_li{position:relative;}
+.smart_menu_a{display:block; height:25px; line-height:24px; padding:0 5px 0 25px; color:#000; font-size:12px; text-decoration:none; overflow:hidden;}
+.smart_menu_a:hover, .smart_menu_a_hover{background-color:#348CCC; color:#fff; text-decoration:none;}
+.smart_menu_li_separate{line-height:0; margin:3px; border-bottom:1px solid #B8CBCB; font-size:0;}
+.smart_menu_triangle{width:0; height:0; border:5px dashed transparent; border-left:5px solid #666; overflow:hidden; position:absolute; top:7px; right:5px;}
+.smart_menu_a:hover .smart_menu_triangle, .smart_menu_a_hover .smart_menu_triangle{border-left-color:#fff;}
+.smart_menu_li_hover .smart_menu_box{top:-1px; left:130px;}
